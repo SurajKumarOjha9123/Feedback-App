@@ -1,0 +1,16 @@
+<div>
+    <table class="feedback-table">
+        <thead>
+            <tr>
+                <th>People</th>
+                <th>Feedback</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let feedbackItem of feedbackList; let i=index">
+            <tr>
+                <td>{{feedbackItem.pname}}</td>
+                <td>{{feedbackItem.feedback}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
